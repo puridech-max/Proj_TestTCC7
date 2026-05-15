@@ -1,0 +1,27 @@
+## Build
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+## Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## OS
+Thumbs.db
+Desktop.ini
+
+## Local secrets (ใส่ connection string จริงที่นี่)
+**/appsettings.Development.json
+
+## Database files
+*.db
+*.db-shm
+*.db-wal
+
+## Cursor / IDE
+.cursor/

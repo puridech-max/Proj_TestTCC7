@@ -1,0 +1,19 @@
+@ProductCodeApi_HostAddress = https://localhost:7111
+
+### รายการสินค้า
+GET {{ProductCodeApi_HostAddress}}/api/Products
+Accept: application/json
+
+### เพิ่มรหัส (แก้ PluCode ให้ตรงรูปแบบ)
+POST {{ProductCodeApi_HostAddress}}/api/Products
+Content-Type: application/json
+
+{
+  "pluCode": "AB12C-34DEF-56789-GH0JK-LMNOP-QRSTU"
+}
+
+### ลบตาม Id
+@id = 1
+DELETE {{ProductCodeApi_HostAddress}}/api/Products/{{id}}
+
+###
